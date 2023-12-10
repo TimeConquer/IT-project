@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candy - Магазин сладостей</title>
+    <style>
+        body {
+            background-color: pink; /* Розовый фон */
+            font-family: comfortaa, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Центрирование изображений */
+            overflow: hidden; /* Скрытие текста, выходящего за пределы экрана */
+        }
+
+        /* Анимация текста */
+        @keyframes slide {
+           0% { transform: translateX(100%); } /* Начальная позиция */
+            100% { transform: translateX(-100%); } /* Конечная позиция */
+        }
+
+        .moving-text {
+            position: absolute;
+            top: 40%; /* Немного ниже от верха */
+            left: 0;
+            right: 0; /* Растягиваем по всей ширине */
+            animation: slide 10s linear infinite; /* Запуск анимации */
+        }
+
+        .half-width {
+            width: 100%; /* Занимает половину ширины */
+            height: 240px; /* Устанавливаем высоту 30px */
+        }
+
+        .image-row {
+            display: flex; /* Использование flexbox для расположения фотографий в ряд */
+            justify-content: center; /* Выравнивание по центру */
+            align-items: center; /* Выравнивание по вертикали */
+            margin-top: 100px; /* Отступ сверху */
+        }
+
+          .image-row img {
+            margin: 10px; /* Отступы между фотографиями */
+            max-width: 200px; /* Максимальная ширина изображений */
+            height: auto; /* Автоматическое соотношение сторон */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Гифка в самом начале сайта (ссылка на изображение) -->
+    <img src="animated.gif" alt="Анимация" class="half-width">
+
+    <!-- Анимированный текст -->
+    <div class="moving-text">Добро пожаловать на сайт Сладостей!!!Волшебный мир сладких радостей: Candy приглашает вас в удивительное путешествие!</div>
+	<audio controls autoplay>
+        <source src="C:\Users\nickname\Desktop\Новая папка\NyanCat.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает элемент audio.
+    </audio>
+
+    <!-- Фотографии в одном ряду -->
+    <div class="image-row">
+        <img src="C:\Users\nickname\Desktop\Новая папка\image1.jpg" alt="Изображение 1" >
+        <img src="C:\Users\nickname\Desktop\Новая папка\image2.jpg" alt="Изображение 2">
+        <img src="C:\Users\nickname\Desktop\Новая папка\image3.jpeg" alt="Изображение 3">
+  	<img src="C:\Users\nickname\Desktop\Новая папка\image4.jpeg" alt="Изображение 4" >
+        <img src="C:\Users\nickname\Desktop\Новая папка\image5.jpeg" alt="Изображение 5">
+ 	<img src="C:\Users\nickname\Desktop\Новая папка\image6.jpeg" alt="Изображение 6" >
+        <img src="C:\Users\nickname\Desktop\Новая папка\image7.jpg" alt="Изображение 7">
+  	<img src="C:\Users\nickname\Desktop\Новая папка\image8.jpeg" alt="Изображение 8" >
+        <!-- Добавьте другие изображения по аналогии -->
+    </div>
+<p>Посетите наш <a href="file:///C:/Users/nickname/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/-4.html">список сладостей</a> для просмотра товаров!</p>
+</body>
+</html>
