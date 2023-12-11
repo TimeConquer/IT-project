@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главные персонажи Хоббита</title>
+    <style>
+        body {
+            font-family: Garamond, serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('back.jpg'); /* Фото на задний фон */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+	
+        .character {
+	margin-top: 50px
+            margin: 75px;
+            position: relative;
+        }
+
+        .character img {
+            wight: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .character:hover img {
+            transform: scale(1.1);
+        }
+
+        .character p {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #8B4513;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .character:hover p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="character">
+        <img src="bilbo.jpg" alt="Бильбо">
+        <p>Бильбо Бэггинс: Мирный хоббит, отправляется в эпическое путешествие вместе с группой гномов, чтобы вернуть утраченное королевство.</p>
+    </div>
+
+    <div class="character">
+        <img src="Gand.jpg" alt="Гэндальф">
+        <p>Гэндальф Серый: Могущественный волшебник, помогает Бильбо и гномам в их путешествии.</p>
+    </div>
+
+    <div class="character">
+        <img src="thorin.jpg" alt="Торин">
+        <p>Торин Дубощит: Лидер компании гномов, стремится вернуть утраченное королевство и покончить с драконом Смаугом.</p>
+    </div>
+
+    <div class="character">
+        <img src="legalas.jpg" alt="Галадриэль">
+        <p>Легалас: один из главных элфийских воинов, очень храбрый лучник и защищает земли от врагов</p>
+    </div>
+
+    <div class="character">
+        <img src="bard.jpg" alt="Бард">
+        <p>Бард Стрелок: Лучник и лидер людей в охране Эскера, играет ключевую роль в событиях на озере.</p>
+    </div>
+    <!-- Добавьте элементы для остальных персонажей по аналогии -->
+
+  <!-- Код для воспроизведения аудио -->
+   <audio controls autoplay src="back.mp3"> </audio>
+</body>
+</html>
